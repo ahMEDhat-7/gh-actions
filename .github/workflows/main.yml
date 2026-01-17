@@ -12,5 +12,11 @@ jobs:
     steps:
       - name: log welcome msg
         run: echo "hi from ubuntu linux, this is gh workflow"
+
+      - name: Checkout repo
+        uses: actions/checkout@v6.0.2
+
+      - name: List all files
+        run: ls -la
   
     
