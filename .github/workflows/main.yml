@@ -1,0 +1,16 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  exp1:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: log welcome msg
+        run: echo "hi from ubuntu linux, this is gh workflow"
+  
+    
