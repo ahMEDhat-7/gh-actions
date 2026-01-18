@@ -1,20 +1,13 @@
 name: Manual Workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: "Choose Environment"
-        required: true
-        default: staging
-        type: choice
-        options:
-          - production
-          - staging
+  repository_dispatch:
+    types:
+      - event_type
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Delpoy manual
-        run: echo "Deployment workflow manually on ${{inputs.environment}}"
+        run: echo "Deployment workflow manually with API Call"
