@@ -1,0 +1,12 @@
+name: Schedule workflow
+
+on:
+  schedule:
+    - cron: "11 * * * *"
+
+jobs:
+  logger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log msg
+        run: echo "hi, Runnin' logger schedule"
