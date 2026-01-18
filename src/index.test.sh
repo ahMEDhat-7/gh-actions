@@ -2,7 +2,7 @@
 
 EXPECTED="hi, ahmed"
 
-OUTPUT=$(node -e "console.log(require(./src/index)('ahmed'))")
+OUTPUT=$(node -e "console.log(require('./src/index')('ahmed'))")
 
 if [ "$OUTPUT" == "$EXPECTED" ]; then
 

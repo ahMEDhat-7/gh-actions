@@ -2,4 +2,4 @@ function greeting(name) {
   return `hi, ${name}`;
 }
 
-export default greeting;
+module.exports = greeting;
