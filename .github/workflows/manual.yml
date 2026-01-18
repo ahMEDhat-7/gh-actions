@@ -3,7 +3,7 @@ name: Manual Workflow
 on:
   repository_dispatch:
     types:
-      - event_type
+      - incident_report
 
 jobs:
   deploy:
