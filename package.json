@@ -1,0 +1,21 @@
+{
+  "name": "gh-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "bash ./src/index.spec.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahMEDhat-7/gh-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ahMEDhat-7/gh-actions/issues"
+  },
+  "homepage": "https://github.com/ahMEDhat-7/gh-actions#readme"
+}
