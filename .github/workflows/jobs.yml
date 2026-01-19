@@ -1,6 +1,9 @@
 name: Run multi-jobs workflow sequentially
 
 on:
+  repository_dispatch:
+    types:
+      - fire
   workflow_dispatch:
     inputs:
       environment:
